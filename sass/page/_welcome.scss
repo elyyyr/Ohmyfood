@@ -1,0 +1,43 @@
+.welcome {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding: 20px 20px 70px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 0 50px 0;
+  }
+
+  a {
+    background: linear-gradient(
+      0deg,
+      rgba(147, 86, 220, 0.9),
+      rgb(255, 121, 218)
+    );
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+    font-weight: 400;
+    font-size: 16;
+    color: rgb(255, 255, 255);
+    padding: 18px 25px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background: linear-gradient(193.33deg, #9e74d1 -11.44%, #f5b2e2 123.93%);
+  }
+}
+
+@media screen and (min-width: $breakpoint) {
+  .welcome h2 {
+    margin-top: -1px;
+    font-weight: 700;
+    font-size: 40px;
+  }
+}

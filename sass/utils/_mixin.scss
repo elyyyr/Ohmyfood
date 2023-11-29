@@ -1,0 +1,21 @@
+@mixin flexCOL {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flexJUST {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin button {
+  font-family: "Roboto";
+  border-radius: 40px;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  padding: 20px 65px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
