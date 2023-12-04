@@ -63,7 +63,10 @@
 .cards_heart {
   font-size: 25px;
   margin-right: 30px;
+  @include heart;
+
 }
+
 
 @media screen and (min-width: $breakpoint) {
   .restaurants h2 {

@@ -27,10 +27,13 @@
     color: rgb(255, 255, 255);
     padding: 18px 25px;
     text-decoration: none;
-  }
+    transition: 300ms;
 
-  a:hover {
-    background: linear-gradient(193.33deg, #9e74d1 -11.44%, #f5b2e2 123.93%);
+
+    &:hover {
+      background: linear-gradient(180deg, rgb(243, 98, 202) 0%, rgb(220, 123, 255) 100%);
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.50);
+    }
   }
 }
 
