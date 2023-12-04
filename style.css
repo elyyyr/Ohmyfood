@@ -472,20 +472,6 @@ footer {
     margin-right: 15px;
   }
 }
-@keyframes keycolor {
-  0% {
-    background: linear-gradient(13deg, rgba(255, 121, 217, 0) 0%, rgba(187, 98, 219, 0) 66%);
-    color: transparent;
-    -webkit-background-clip: text;
-            background-clip: text;
-  }
-  10% {
-    background: linear-gradient(13deg, rgba(255, 121, 217, 0.452) 0%, rgba(187, 98, 219, 0.452) 66%);
-    color: transparent;
-    -webkit-background-clip: text;
-            background-clip: text;
-  }
-}
 @keyframes itsme {
   from {
     opacity: 0;
