@@ -71,7 +71,7 @@ body {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (min-width: 1165px) {
+@media screen and (min-width: 1065px) {
   .welcome h2 {
     margin-top: -1px;
     font-weight: 700;
@@ -131,7 +131,7 @@ body {
   width: 100%;
 }
 
-@media screen and (min-width: 1165px) {
+@media screen and (min-width: 1065px) {
   .fonctionnement_title {
     margin-left: 25px;
   }
@@ -213,7 +213,7 @@ body {
   animation: keycolor 0.5s;
 }
 
-@media screen and (min-width: 1165px) {
+@media screen and (min-width: 1065px) {
   .restaurants h2 {
     max-width: 1440px;
     margin: auto;
@@ -378,7 +378,7 @@ body {
   animation: keycolor 0.5s;
 }
 
-@media screen and (min-width: 1165px) {
+@media screen and (min-width: 1065px) {
   .menu_wrapper {
     max-width: 1440px;
     margin: auto;
@@ -449,7 +449,7 @@ footer {
   font-weight: 400;
 }
 
-@media screen and (min-width: 1165px) {
+@media screen and (min-width: 1065px) {
   .footer {
     flex-direction: row-reverse;
     align-items: end;
