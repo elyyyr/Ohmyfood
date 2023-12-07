@@ -317,6 +317,8 @@ body {
   border-radius: 15.04px;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
   position: relative;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .repas h2 {
@@ -336,13 +338,50 @@ body {
   font-size: 15px;
   margin-top: -10px;
   margin-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.repas span {
+.repas .repas_price {
   position: absolute;
   bottom: 15px;
   right: 20px;
   font-weight: 700;
+}
+
+.repas .repas_check {
+  position: absolute;
+  right: -30px;
+}
+
+.repas:hover .repas_check {
+  background-color: #99e2d0;
+  width: 70px;
+  height: 70px;
+  right: -25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.repas_check i {
+  background-color: white;
+  color: #99e2d0;
+  border-radius: 100px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.repas:hover .repas_check {
+  margin-right: 25px;
+}
+
+.repas:hover .repas_price {
+  margin-right: 60px;
 }
 
 .menu_button {
