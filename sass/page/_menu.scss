@@ -178,20 +178,6 @@
   }
 }
 
-/** TEST O_O
-
-.repas:hover .repas_check {
-  background-color: #99e2d0;
-  width: 70px;
-  height: 70px;
-  right: -25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-**/
-
 .repas:hover .repas_check {
   margin-right: 70px;
   transition-duration: 0.5s;
