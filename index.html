@@ -19,9 +19,8 @@
     <title>Ohmyfood</title>
   </head>
 
-  <body class="body_index">
-    <div class="loaderdl">
-      <img src="images/logo/Preloader_2.gif" alt="loader" />
+  <body class="load">
+    <div class="loader-container">
       <div class="loader"></div>
     </div>
     <main class="main_index">
@@ -182,5 +181,11 @@
         </div>
       </footer>
     </main>
+    <script>
+      // Retirez la classe "loading" du body une fois que la page est entièrement chargée
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.classList.remove("load");
+      });
+    </script>
   </body>
 </html>

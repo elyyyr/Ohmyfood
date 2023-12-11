@@ -119,7 +119,12 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    padding-right: 73px;
+    transition-duration: 0.3s;
+  }
+
+  .repas:hover h2 {
+    padding-right: 70px;
+    transition-duration: 0.3s;
   }
 
   p {
@@ -130,7 +135,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    transition-duration: 0.3s;
+    padding-right: 60px;
+  }
+
+  .repas:hover P {
     padding-right: 110px;
+    transition-duration: 0.3s;
   }
 }
 

@@ -4,50 +4,38 @@ body {
   padding: 0;
 }
 
-.body_index {
+body.load {
   margin: 0;
-  animation: fadein 0.8s linear;
+  animation: fadein 1s linear;
   position: relative;
-  overflow-x: hidden;
 }
 
 .main_index {
-  animation: fadein 2s linear;
-  animation-delay: 2.5s;
+  animation: fadein 1s linear;
+  animation-delay: 1s;
   animation-fill-mode: both;
 }
 
-/**
-.loaderdl {
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeout 0.2s linear;
-  animation-delay: 2.5s;
-  animation-fill-mode: both;
-  width: 99vw;
-  height: 100vh;
-
-  .loader {
-    border: 10px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 10px solid #9356dc;
-    width: 120px;
-    height: 120px;
-    animation: rotate 1s linear infinite;
-    position: absolute;
-  }
+  animation: fadeout 1s forwards;
 }
-**/
-.loaderdl {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: fadeout 0.2s linear;
-  animation-delay: 2.5s;
-  animation-fill-mode: both;
-  width: 99vw;
-  height: 100vh;
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #9356dc;
+  width: 120px;
+  height: 120px;
+  animation: rotate 0.6s linear infinite;
 }
 
 .logo {
@@ -411,7 +399,11 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  padding-right: 73px;
+  transition-duration: 0.3s;
+}
+.menu_repas .repas:hover h2 {
+  padding-right: 70px;
+  transition-duration: 0.3s;
 }
 .menu_repas p {
   font-weight: 300;
@@ -421,7 +413,12 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition-duration: 0.3s;
+  padding-right: 60px;
+}
+.menu_repas .repas:hover P {
   padding-right: 110px;
+  transition-duration: 0.3s;
 }
 
 .repas_price {
@@ -607,11 +604,13 @@ footer {
   }
 }
 @keyframes fadeout {
-  from {
+  0% {
     opacity: 1;
   }
-  to {
+  90% {
+    opacity: 1;
+  }
+  100% {
     opacity: 0;
-    position: absolute;
   }
 }/*# sourceMappingURL=style.css.map */
