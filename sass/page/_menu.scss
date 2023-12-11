@@ -6,6 +6,11 @@
   padding-bottom: 50px;
   margin-top: -80px;
   position: relative;
+  @media screen and (min-width: $breakpoint) {
+    max-width: 1440px;
+    margin: auto;
+    margin-top: -45px;
+  }
 }
 
 .title_wrapper {
@@ -16,30 +21,48 @@
   font-size: 20px;
   padding-top: 5px;
   margin-left: 5px;
+  @media screen and (min-width: $breakpoint) {
+    justify-content: center;
+    padding-top: 40px;
+  }
+
+  h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  @media screen and (min-width: $breakpoint) {
+    button {
+      margin-left: 30px;
+    }
+  }
 }
 
-.title_wrapper h2 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.menu_category {
+  padding-bottom: 40px;
+  @media screen and (min-width: $breakpoint) {
+    padding: 0 300px;
+    margin-bottom: 50px;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 16px;
+    border-bottom: 3px solid rgba(153, 226, 208, 1);
+    width: 40px;
+    padding-bottom: 5px;
+  }
 }
 
-.menu_category h3 {
-  font-weight: 400;
-  font-size: 16px;
-  border-bottom: 3px solid rgba(153, 226, 208, 1);
-  width: 40px;
-  padding-bottom: 5px;
+.heart {
+  @include heart;
 }
 
 .menu_img img {
   object-fit: cover;
   width: 100%;
   height: 383px;
-}
-
-.menu_category {
-  padding-bottom: 40px;
 }
 
 .entree {
@@ -72,46 +95,46 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+
+  .repas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 69px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15.04px;
+    box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px
+      rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-top: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 73px;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: -10px;
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 110px;
+  }
 }
 
-.repas {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 69px;
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 15.04px;
-  box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px
-    rgba(0, 0, 0, 0.1);
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.repas h2 {
-  font-size: 18px;
-  font-weight: 500;
-  margin-left: 10px;
-  margin-top: 13px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  padding-right: 73px;
-}
-
-.repas p {
-  font-weight: 300;
-  font-size: 15px;
-  margin-top: -10px;
-  margin-left: 10px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  padding-right: 110px;
-}
-
-.repas .repas_price {
+.repas_price {
   position: absolute;
   bottom: 10px;
   right: 20px;
@@ -119,7 +142,7 @@
   transition-duration: 0.5s;
 }
 
-.repas .repas_check {
+.repas_check {
   position: absolute;
   right: -70px;
   transition-duration: 0.5s;
@@ -129,9 +152,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  i {
+    background-color: white;
+    color: #99e2d0;
+    border-radius: 100px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(195deg);
+    transition-duration: 0.5s;
+  }
 }
 
-/**.repas:hover .repas_check {
+/** TEST O_O
+
+.repas:hover .repas_check {
   background-color: #99e2d0;
   width: 70px;
   height: 70px;
@@ -139,20 +177,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}**/
-
-.repas_check i {
-  background-color: white;
-  color: #99e2d0;
-  border-radius: 100px;
-  height: 30px;
-  width: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: rotate(195deg);
-  transition-duration: 0.5s;
 }
+
+**/
 
 .repas:hover .repas_check {
   margin-right: 70px;
@@ -171,34 +198,8 @@
 .menu_button {
   display: flex;
   justify-content: center;
-}
 
-.menu_button button {
-  @include button;
-}
-
-.heart {
-  @include heart;
-}
-
-@media screen and (min-width: $breakpoint) {
-  .menu_wrapper {
-    max-width: 1440px;
-    margin: auto;
-    margin-top: -45px;
-  }
-
-  .title_wrapper {
-    justify-content: center;
-    padding-top: 40px;
-  }
-
-  .title_wrapper button {
-    margin-left: 30px;
-  }
-
-  .menu_category {
-    padding: 0 300px;
-    margin-bottom: 50px;
+  button {
+    @include button;
   }
 }

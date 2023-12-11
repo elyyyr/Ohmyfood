@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
   margin: 20px 0 0 0;
   padding-bottom: 20px;
   position: relative;
@@ -18,12 +18,12 @@
   height: 50px;
 
   &_content {
-    margin: 13px 25px 0 0;
+    margin: 16px 25px 0 0;
     color: rgb(53, 53, 53);
   }
 
   i {
-    margin-right: 15px;
+    margin-right: 13px;
   }
 
   span {

@@ -6,64 +6,64 @@ footer {
   @include flexCOL;
   padding: 20px 0 20px 25px;
   gap: 10px;
-}
-
-.footer_title {
-  font-family: "shrikhand";
-  font-weight: 400;
-  font-size: 20px;
-  color: rgb(255, 255, 255);
-  margin-bottom: 10px;
-}
-
-.footer_info {
-  @include flexCOL;
-  gap: 10px;
-}
-
-.footer a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-weight: 200;
-}
-
-.footer_noicons {
-  @include flexCOL;
-  gap: 10px;
-}
-
-.footer a .footer_icons:hover {
-  text-decoration: underline;
-}
-
-.footer .footer_noicons a:hover {
-  text-decoration: underline;
-}
-
-.footer_info a i {
-  margin-right: 5px;
-}
-
-.footer a span {
-  font-weight: 400;
-}
-
-@media screen and (min-width: $breakpoint) {
-  .footer {
+  @media screen and (min-width: $breakpoint) {
     flex-direction: row-reverse;
     align-items: end;
     height: 70px;
     margin-right: 60px;
     padding-bottom: 25px;
   }
-  .footer .footer_info {
+
+  &_title {
+    font-family: "shrikhand";
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+  }
+}
+
+.footer_info {
+  @include flexCOL;
+  gap: 10px;
+  @media screen and (min-width: $breakpoint) {
     display: flex;
     flex-direction: row;
   }
-  .footer_info .footer_noicons {
+
+  a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+  }
+
+  i {
+    margin-right: 5px;
+  }
+
+  span {
+    font-weight: 400;
+  }
+}
+
+.footer_noicons {
+  @include flexCOL;
+  gap: 10px;
+  @media screen and (min-width: $breakpoint) {
     margin-left: 50px;
     flex-direction: row;
   }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer_icons:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: $breakpoint) {
   .footer .footer_title {
     margin: 0 0 0 80px;
   }

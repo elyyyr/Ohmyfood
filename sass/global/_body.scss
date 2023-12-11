@@ -3,3 +3,50 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.body_index {
+  margin: 0;
+  animation: fadein 0.8s linear;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.main_index {
+  animation: fadein 2s linear;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+}
+
+/**
+.loaderdl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeout 0.2s linear;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+  width: 99vw;
+  height: 100vh;
+
+  .loader {
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #9356dc;
+    width: 120px;
+    height: 120px;
+    animation: rotate 1s linear infinite;
+    position: absolute;
+  }
+}
+**/
+
+.loaderdl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeout 0.2s linear;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+  width: 99vw;
+  height: 100vh;
+}
