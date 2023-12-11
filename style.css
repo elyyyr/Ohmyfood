@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 
-body.load {
+.body_index {
   margin: 0;
   animation: fadein 1s linear;
   position: relative;
