@@ -192,6 +192,7 @@ body {
 
 .restaurants_cards {
   padding: 25px 25px 0 25px;
+  position: relative;
 }
 @media screen and (min-width: 1065px) {
   .restaurants_cards {
@@ -200,7 +201,6 @@ body {
   }
 }
 .restaurants_cards a {
-  position: relative;
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
@@ -223,8 +223,8 @@ body {
   font-weight: 500;
   padding: 7px 13px;
   position: absolute;
-  right: 20px;
-  top: 13px;
+  right: 45px;
+  top: 40px;
 }
 
 .cards_footer {
