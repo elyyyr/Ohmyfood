@@ -7,6 +7,21 @@
   }
 }
 
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);

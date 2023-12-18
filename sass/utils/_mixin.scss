@@ -32,11 +32,20 @@
 }
 
 @mixin heart {
-  .fa-heart:hover {
-    font-weight: 900;
-    background: linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
-    background-clip: text;
+  .full {
+    font-size: 27px;
+    opacity: 0;
+    background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
     color: transparent;
+    background-clip: text;
     cursor: pointer;
+    transition-duration: 0.9s;
+  }
+
+  .full:hover {
+    transform: scale(1);
+    transition: transform 330ms ease-in-out;
+    animation: heart 0.4s;
+    opacity: 1;
   }
 }

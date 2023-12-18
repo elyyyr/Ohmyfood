@@ -75,14 +75,14 @@ body {
   text-align: center;
   padding: 20px 20px 70px;
 }
-.welcome h2 {
+.welcome h1 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
 }
 @media screen and (min-width: 1065px) {
-  .welcome h2 {
+  .welcome h1 {
     margin-top: -1px;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 40px;
   }
 }
@@ -148,6 +148,7 @@ body {
   padding: 25px;
   height: 30px;
   width: 100%;
+  cursor: pointer;
 }
 .li_steps .number {
   background-color: rgb(147, 86, 220);
@@ -162,15 +163,18 @@ body {
   color: rgb(126, 126, 126);
   margin: 0 20px 0 20px;
   font-size: 20px;
-}
-.li_steps .fa-store {
-  color: rgb(147, 86, 220);
+  transition: 0.3s;
 }
 .li_steps .li_text {
   color: rgb(0, 0, 0);
   font-weight: 500;
   font-size: 16px;
   width: 100%;
+}
+
+.li_steps:hover i {
+  transition: 0.3s;
+  color: rgb(147, 86, 220);
 }
 
 .restaurants {
@@ -247,14 +251,26 @@ body {
   font-size: 25px;
   margin-right: 30px;
 }
-.cards_heart .fa-heart:hover {
-  font-weight: 900;
-  background: linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
+.cards_heart .full {
+  font-size: 27px;
+  opacity: 0;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
-  color: transparent;
   cursor: pointer;
-  animation: keycolor 0.5s;
+  transition-duration: 0.9s;
+}
+.cards_heart .full:hover {
+  transform: scale(1);
+  transition: transform 330ms ease-in-out;
+  animation: heart 0.4s;
+  opacity: 1;
+}
+.cards_heart .full {
+  position: absolute;
+  right: 54px;
+  bottom: 25px;
 }
 
 @media screen and (min-width: 1065px) {
@@ -287,7 +303,7 @@ body {
   justify-content: space-between;
   font-family: "shrikhand";
   font-weight: 400;
-  font-size: 20px;
+  font-size: 17px;
   padding-top: 5px;
   margin-left: 5px;
 }
@@ -297,7 +313,7 @@ body {
     padding-top: 40px;
   }
 }
-.title_wrapper h2 {
+.title_wrapper h1 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -325,14 +341,29 @@ body {
   padding-bottom: 5px;
 }
 
-.heart .fa-heart:hover {
-  font-weight: 900;
-  background: linear-gradient(13deg, #ff79da 0%, #ba62db 66%);
+.heart {
+  position: relative;
+}
+.heart .full {
+  font-size: 27px;
+  opacity: 0;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
-  color: transparent;
   cursor: pointer;
-  animation: keycolor 0.5s;
+  transition-duration: 0.9s;
+}
+.heart .full:hover {
+  transform: scale(1);
+  transition: transform 330ms ease-in-out;
+  animation: heart 0.4s;
+  opacity: 1;
+}
+.heart .full {
+  position: absolute;
+  margin-left: -26px;
+  top: 31px;
 }
 
 .menu_img img {
@@ -566,6 +597,20 @@ footer {
     opacity: 0;
   }
   to {
+    opacity: 1;
+  }
+}
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
     opacity: 1;
   }
 }
